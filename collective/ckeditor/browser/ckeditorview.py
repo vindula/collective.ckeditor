@@ -240,6 +240,7 @@ class CKeditorView(BrowserView):
         params_js_string+= '''config.extraPlugins = "%s";'''%','.join(ids)
 
         params_js_string += """
+    config.resize_enabled = false;
     config.filebrowserWindowWidth = parseInt(jQuery(window).width()*70/100);
     config.filebrowserWindowHeight = parseInt(jQuery(window).height()-20);
     config.toolbar_Plone = %s;
