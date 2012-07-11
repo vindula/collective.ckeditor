@@ -11,3 +11,7 @@ Changelog
 - Ajustes no view de configuração do ckeditor para não redimencionar o editor
 - Ajustes no js para funcionar com ajax 
 
+
+1.1.1 - 2012-06-11
+--------------------
+- Criado metodo de altera o editor do usuario quando ele logar (Funcionalidade Comentada)
