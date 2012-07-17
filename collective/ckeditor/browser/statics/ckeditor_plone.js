@@ -80,8 +80,10 @@ jQuery(document).ready(launchCKInstances);
 
 function removeEditor(){
     // Destroy the editor.
-    editor.destroy();
-    editor = null;
+    if (editor){ 
+        editor.destroy();
+        editor = null;
+    };
 }
 
 function carregaEditor(obj) {
