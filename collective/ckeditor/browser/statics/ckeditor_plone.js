@@ -47,7 +47,7 @@ if ( window.CKEDITOR ){
 
 
 /* Plone specific ckeditor launcher using jQuery */
-var editor = '';
+var editor = null;
 launchCKInstances = function() {
     jQuery('.ckeditor_plone').each(function(){
         ckid = jQuery(this).attr('id');
@@ -55,28 +55,41 @@ launchCKInstances = function() {
         /* Here starts the local js overload of settings by a field widget */
         /* for now it only works with at rich widget : basehref width and height are the only attributes */
         /* TODO improve it for any possible widget settings with jQuery.each('',jQuery(this).parent()) ... */
-        if (jQuery('.cke_iswidget', jQuery(this).parent()).length) {
-            cke_width = jQuery('.cke_width', jQuery(this).parent()).val();
-            cke_height = jQuery('.cke_height', jQuery(this).parent()).val();
-            cke_baseHref = jQuery('.cke_baseHref', jQuery(this).parent()).val();
-            
-            editor = CKEDITOR.replace( ckid,
-                      { customConfig : cke_config_url,
-                        width : cke_width,
-                        height : cke_height,
-                        baseHref : cke_baseHref
-                      });
-            }
-        else  {
-            editor = CKEDITOR.replace( ckid,
-              {
-                customConfig : cke_config_url
-              });
-            }
+        
+        if (!CKEDITOR.instances)
+            CKInstances(this);
+        else if (!CKEDITOR.instances[ckid]){
+            CKInstances(this);
+        }
+        
     })    
 }
 jQuery(document).ready(launchCKInstances);
 
+
+function CKInstances (e){
+    
+    if (jQuery('.cke_iswidget', jQuery(e).parent()).length) {
+        cke_width = jQuery('.cke_width', jQuery(e).parent()).val();
+        cke_height = jQuery('.cke_height', jQuery(e).parent()).val();
+        cke_baseHref = jQuery('.cke_baseHref', jQuery(e).parent()).val();
+        
+        editor = CKEDITOR.replace( ckid,
+                  { customConfig : cke_config_url,
+                    width : cke_width,
+                    height : cke_height,
+                    baseHref : cke_baseHref
+                  });
+        }
+    else  {
+        editor = CKEDITOR.replace( ckid,
+          {
+            customConfig : cke_config_url
+          });
+        }
+
+
+}
 
 function removeEditor(){
     // Destroy the editor.
