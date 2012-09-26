@@ -334,6 +334,7 @@ CKEDITOR.config =
 		'undo,' +
 		'wysiwygarea,' +
 		'wsc',
+		
 
 	/**
 	 * A list of additional plugins to be loaded. This setting makes it easier

@@ -15,3 +15,10 @@ Changelog
 1.1.1 - 2012-06-11
 --------------------
 - Criado metodo de altera o editor do usuario quando ele logar (Funcionalidade Comentada)
+
+1.1.2 - 2012-09-26
+--------------------
+- Adição de dosi novos plugins de video ao editor,
+    - um para videos via codigo embed 
+    - outro atraves de videos html5 dentro da intranet
+    Ticket #245
