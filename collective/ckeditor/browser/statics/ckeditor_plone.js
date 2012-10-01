@@ -123,6 +123,11 @@ function carregaEditor(obj) {
 }
 
 function CKupdate(){
-    for ( instance in CKEDITOR.instances )
-        CKEDITOR.instances[instance].updateElement();
+    for (instance in CKEDITOR.instances) {
+		//CKEDITOR.instances[instance].updateElement();
+		jQuery('#' + instance).val(CKEDITOR.instances[instance].getData());
+		removeEditor();
+    }
+		
+		
 }
