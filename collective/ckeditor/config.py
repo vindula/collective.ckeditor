@@ -19,7 +19,8 @@ CKEDITOR_PLONE_DEFAULT_TOOLBAR = """[
     ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
     ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
     ['Link','Unlink','Anchor'],
-    ['Image','Flash','Video','MediaEmbed', 'Table','HorizontalRule','Smiley','SpecialChar',
+    ['Image','Flash','Video','MediaEmbed','PhotoAlbum'],
+    ['Table','HorizontalRule','Smiley','SpecialChar',
     'PageBreak'],
     ['Maximize', 'ShowBlocks','-','About']
 ]"""

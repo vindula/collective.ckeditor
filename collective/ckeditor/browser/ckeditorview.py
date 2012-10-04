@@ -152,6 +152,7 @@ class CKeditorView(BrowserView):
         """
         return browser url for a type
         """
+        
         base_url = '%s/@@plone_ckfinder?' % self.ckfinder_basehref
         if type == 'file':
             base_url += 'typeview=file&media=file'
@@ -167,6 +168,10 @@ class CKeditorView(BrowserView):
             base_url += 'typeview=image&media=image'
             for itype in image_types:
                 base_url += '&types:list=%s' % url_quote(itype)
+        elif type == 'album':
+            base_url += '&types:list=%s' % url_quote('VindulaPhotoAlbum')                            
+                
+                
         return "'%s'" % base_url
 
     def geCK_JSProperty(self, prop):
@@ -210,6 +215,8 @@ class CKeditorView(BrowserView):
         params['filebrowserImageBrowseUrl'] = img_url
         flash_url = self.getCK_finder_url(type='flash')
         params['filebrowserFlashBrowseUrl'] = flash_url
+        album_url = self.getCK_finder_url(type='album')
+        params['filebrowserAlbumBrowseUrl'] = album_url
         # the basehref must be set in wysiwyg template
         # params['baseHref'] = self.cke_basehref
 

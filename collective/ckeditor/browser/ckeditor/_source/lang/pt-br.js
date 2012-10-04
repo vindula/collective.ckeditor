@@ -810,5 +810,12 @@ CKEDITOR.lang['pt-br'] =
 		metaAuthor : 'Autor',
 		metaCopyright : 'Direitos Autorais',
 		previewHtml : '<p>Este é um <strong>texto de exemplo</strong>. Você está usando <a href="javascript:void(0)">CKEditor</a>.</p>'
+	},
+	
+	photoalbum :
+	{
+		properties : 'Propriedades do Álbum de Fotos',
 	}
+	
+	
 };
