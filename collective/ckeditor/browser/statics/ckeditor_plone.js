@@ -127,6 +127,9 @@ function CKupdate(){
 		//CKEDITOR.instances[instance].updateElement();
 		jQuery('#' + instance).val(CKEDITOR.instances[instance].getData());
 		removeEditor();
+		
+	    carregaEditor(jQuery('#' + instance)[0]);
+	
     }
 		
 		
