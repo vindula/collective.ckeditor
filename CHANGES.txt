@@ -26,3 +26,8 @@ Changelog
 1.1.3 - 2012-10-04
 --------------------
 -  Adição do plugin para album de fotos    
+
+
+1.1.3 - 2012-10-29
+--------------------
+- Correção do ckeditor para recarregar nos comentarios
