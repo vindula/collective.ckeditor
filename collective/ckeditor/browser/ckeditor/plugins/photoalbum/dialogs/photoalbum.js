@@ -95,7 +95,7 @@
 		                    },
 							{
                                 type : 'text',
-                                'default': '500px',
+                                'default': '430px',
                                 id : 'txtWidth',
                                 style : 'width:50%;margin:5px 0;',
                                 label : editor.lang.common.width + ' em pixel ou porcetagem',
@@ -110,7 +110,7 @@
                             },
 							{
 		                        type : 'text',
-		                        'default': '500px',
+		                        'default': '400px',
 		                        id : 'txtHeight',
 								style : 'width:50%;margin:5px 0;',
 		                        label : editor.lang.common.height + ' em pixel',

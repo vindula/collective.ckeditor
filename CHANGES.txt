@@ -31,3 +31,7 @@ Changelog
 1.1.3 - 2012-10-29
 --------------------
 - Correção do ckeditor para recarregar nos comentarios
+
+1.1.4 - 2012-11-05
+--------------------
+- Ajustes no tamanho do album de fotos
