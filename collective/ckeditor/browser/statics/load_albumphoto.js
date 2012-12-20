@@ -11,7 +11,7 @@ function aleatorio(){
 
 $j(document).ready(function(){
     
-	$j('#photoalbum').each(function(){
+	$j('.photoalbum').each(function(){
 		var ctx = $j(this), 
 		    url = ctx.attr('classid'),
 		    width = ctx.attr('width'),

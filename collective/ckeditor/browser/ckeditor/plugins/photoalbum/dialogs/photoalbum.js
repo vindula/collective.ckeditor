@@ -42,6 +42,7 @@
                     objectNode = CKEDITOR.dom.element.createFromHtml( '<cke:embed></cke:embed>', editor.document );
                     var attributes = {
 						id : 'photoalbum',
+						class : 'photoalbum',
                         classid : this._.contents.Link.txtUrl.getValue(),
 						width : this._.contents.Link.txtWidth.getValue(),
                         height : this._.contents.Link.txtHeight.getValue(),
