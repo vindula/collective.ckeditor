@@ -10,9 +10,14 @@
  <javascript cacheable="True" compression="safe" conditionalcomment=""
     cookable="True" enabled="True" expression=""
     id="++resource++ckeditor_for_plone/ckeditor_plone.js" inline="False"/>
- 
+
  <javascript cacheable="True" compression="safe" conditionalcomment=""
     cookable="False" enabled="True" expression=""
-    id="++resource++ckeditor_for_plone/load_albumphoto.js" inline="False"/>	
-	
+    id="++resource++ckeditor_for_plone/load_albumphoto.js" inline="False"/>
+
+  <javascript authenticated="False" bundle="default" cacheable="True"
+              compression="none" conditionalcomment="" cookable="True" enabled="True"
+              expression="" id="++resource++ckeditor_for_plone/accordion.js"
+              inline="False"/>
+
 </object>

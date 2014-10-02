@@ -22,7 +22,8 @@ CKEDITOR_PLONE_DEFAULT_TOOLBAR = """[
     ['Image','Flash','Video','MediaEmbed','PhotoAlbum'],
     ['Table','HorizontalRule','Smiley','SpecialChar',
     'PageBreak'],
-    ['Maximize', 'ShowBlocks','-','About']
+    ['Maximize', 'ShowBlocks','-','About'],
+    ['Accordion']
 ]"""
 
 # quintagroup.com (from qPloneResolveUID product)

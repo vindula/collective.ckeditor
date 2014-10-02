@@ -1,8 +1,47 @@
-/* 
+/*
   PLACE HERE SPECIFIC GLOBAL CSS STYLES FOR CKEDITOR
   NOT EMBEDDED IN PORTAL_CSS
  */
 
 body {
   padding: 10px;
+}
+
+
+#content dl.acc .retrair, #content-accordion .expandir {
+    cursor:pointer;
+}
+
+#content dl.acc h3 {
+    background:none!important;
+}
+
+#content dl.acc.lista-accordion-n2 {
+    margin-left:30px;
+}
+
+#content dl.acc.lista-accordion-n3 {
+    margin-left: 60px;
+}
+
+#content dl.acc img {
+    margin-right:10px;
+}
+
+#content dl.acc dd {
+    margin-top:15px;
+    margin-bottom:15px;
+    display: none;
+}
+
+.mceContentBody dl.acc dd {
+    display: block !important;
+}
+
+.retrair {
+    display:none;
+}
+
+.cke_show_borders dd{
+    display: block !important;
 }
