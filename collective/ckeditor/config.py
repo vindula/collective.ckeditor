@@ -20,10 +20,11 @@ CKEDITOR_PLONE_DEFAULT_TOOLBAR = """[
     ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
     ['Link','Unlink','Anchor'],
     ['Image','Flash','Video','MediaEmbed','PhotoAlbum'],
-    ['Table','HorizontalRule','Smiley','SpecialChar',
-    'PageBreak'],
-    ['Maximize', 'ShowBlocks','-','About'],
-    ['Accordion']
+    ['Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+    '/',
+    ['Styles','Format','Font','FontSize'],
+    ['TextColor','BGColor','Accordion'],
+    ['Maximize', 'ShowBlocks','-','About']
 ]"""
 
 # quintagroup.com (from qPloneResolveUID product)
