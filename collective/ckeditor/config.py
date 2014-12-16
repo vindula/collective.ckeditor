@@ -22,7 +22,6 @@ CKEDITOR_PLONE_DEFAULT_TOOLBAR = """[
     ['Image','Flash','Video','MediaEmbed','PhotoAlbum'],
     ['Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
     '/',
-    ['Styles','Format','Font','FontSize'],
     ['TextColor','BGColor','Accordion'],
     ['Maximize', 'ShowBlocks','-','About']
 ]"""
