@@ -20,8 +20,8 @@ CKEDITOR_PLONE_DEFAULT_TOOLBAR = """[
     ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
     ['Link','Unlink','Anchor'],
     ['Image','Flash','Video','MediaEmbed','PhotoAlbum'],
-    ['Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
     '/',
+    ['Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
     ['TextColor','BGColor','Accordion'],
     ['Maximize', 'ShowBlocks','-','About']
 ]"""
