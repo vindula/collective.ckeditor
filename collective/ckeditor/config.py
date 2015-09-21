@@ -19,7 +19,7 @@ CKEDITOR_PLONE_DEFAULT_TOOLBAR = """[
     ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
     ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
     ['Link','Unlink','Anchor'],
-    ['Image','Flash','Video','MediaEmbed','PhotoAlbum'],
+    ['Image','Flash','Video','Iframe','PhotoAlbum'],
     '/',
     ['Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
     ['TextColor','BGColor','Accordion'],
